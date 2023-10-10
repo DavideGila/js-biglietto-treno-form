@@ -12,10 +12,28 @@ const generateBtn = document.querySelector('.btn-outline-light');
 
 generateBtn.addEventListener('click', function(){
     let nome = document.getElementById('nc').value;
-    console.log(nome)
+    // console.log(nome)
     let km = document.getElementById('km').value;
-    console.log(km)
+    // console.log(km)
     let age = document.getElementById('age').value;
-    console.log(age)    
+    // console.log(age)
+
+    const kmPrice = 0.21;
+    let regularPrice = (km * kmPrice);
+
+    // if(nome === '' || km === ''){
+    //     alert('Devi inserire dei valori!')
+    // }
+
+    if(age === 'minorenne'){
+        finalPrice = (regularPrice - (regularPrice * 0.2)).toFixed(2);
+        console.log(finalPrice)
+    } else if (age === 'over65') {
+        finalPrice = (regularPrice - (regularPrice * 0.4)).toFixed(2);
+        console.log(finalPrice)
+    } else {
+        finalPrice = (regularPrice).toFixed(2)
+        console.log(finalPrice)
+    }
 })
 
