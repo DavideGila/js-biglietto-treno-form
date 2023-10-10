@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-info">
+
+    <h2 class="text-white text-center mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     <div class="container mt-4">
         <label for="name">
             <input type="text" id="nc">
@@ -27,24 +29,25 @@
         <button class="btn btn-outline-light text-dark">Genera</button>
     </div>
     
-    <div class="container">
+    <h2 class="text-white text-center mt-5">IL TUO BIGLIETTO</h2>
+    <div class="container bg-white p-4">
         <table class="table-borderless">
             <thead>
               <tr>
-                <th scope="col" class="bg-secondary-subtle col-4">NOME PASSEGERO</th>
-                <th scope="col" class="col-4">Offerta</th>
-                <th scope="col" class="col-2">Carrozza</th>
-                <th scope="col" class="col-2">Codice CP</th>
-                <th scope="col" class="col-4">Costo Biglietto</th>
+                <th scope="col" class="bg-secondary-subtle col-4 p-2">NOME PASSEGERO</th>
+                <th scope="col" class="col-4 p-2">Offerta</th>
+                <th scope="col" class="col-2 p-2">Carrozza</th>
+                <th scope="col" class="col-2 p-2">Codice CP</th>
+                <th scope="col" class="col-4 p-2">Costo Biglietto</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td id="passengername" class="bg-secondary-subtle"></td>
-                <td id="sale"></td>
-                <td id="traincarriage"></td>
-                <td id="codecp"></td>
-                <td id="ticketprice"></td>
+                <td id="passengername" class="bg-secondary-subtle p-2"></td>
+                <td id="sale" class="p-2"></td>
+                <td id="traincarriage" class="p-2"></td>
+                <td id="codecp" class="p-2"></td>
+                <td id="ticketprice" class="p-2"></td>
               </tr>
             </tbody>
         </table>
