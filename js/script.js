@@ -22,18 +22,41 @@ generateBtn.addEventListener('click', function(){
     let regularPrice = (km * kmPrice);
 
     if(nome === '' || km === ''){
-        alert('Devi inserire dei valori!')
+        alert('Devi inserire dei valori!');
     }
+
+    const salePrice = document.getElementById('sale');
 
     if(age === 'minorenne'){
         finalPrice = (regularPrice - (regularPrice * 0.2)).toFixed(2);
         // console.log(finalPrice)
+        salePrice.innerHTML = 'Sconto biglietto 20%'
     } else if (age === 'over65') {
         finalPrice = (regularPrice - (regularPrice * 0.4)).toFixed(2);
         // console.log(finalPrice)
+        salePrice.innerHTML = 'Sconto biglietto 40%'
     } else {
-        finalPrice = (regularPrice).toFixed(2)
+        finalPrice = (regularPrice).toFixed(2);
         // console.log(finalPrice)
+        salePrice.innerHTML = 'Biglietto standard'
     }
+
+    const nomePassenger = document.getElementById('passengername');
+    nomePassenger.innerHTML = nome;
+
+    const trainCarriage = document.getElementById('traincarriage');
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+      };
+    trainCarriage.innerHTML = `${getRndInteger(1, 10)}`
+
+    const codeCp = document.getElementById('codecp');
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+      };
+    codeCp.innerHTML = `${getRndInteger(10000, 100000)}`
+    
+    const ticketPrice = document.getElementById('ticketprice');
+    ticketPrice.innerHTML = finalPrice
 })
 
