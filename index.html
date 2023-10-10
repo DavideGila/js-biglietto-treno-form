@@ -14,23 +14,24 @@
 <body class="bg-info">
 
     <h2 class="text-white text-center mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-    <div class="container mt-4">
+    <div class="container mt-4 bg-white p-4">
         <label for="name">
-            <input type="text" id="nc">
-            <input type="text" id="km">
+            <input type="text" id="nc" class="border-info">
+            <input type="text" id="km" class="border-info">
         </label>
 
-        <select name="age" id="age">
+        <select name="age" id="age" class="border-info">
             <option value="maggiorenne">Maggiorenne</option>
             <option value="minorenne">Minorenne</option>
             <option value="over65">Over 65</option>
         </select>
         
-        <button class="btn btn-outline-light text-dark">Genera</button>
+        <button class="btn btn-outline-light text-dark border-info">Genera</button>
     </div>
     
     <h2 class="text-white text-center mt-5">IL TUO BIGLIETTO</h2>
     <div class="container bg-white p-4 d-none" id="ticket">
+        <h4>DETTAGLIO PASSEGERI</h4>
         <table class="table-borderless">
             <thead>
               <tr>
