@@ -9,6 +9,13 @@
 
 
 const generateBtn = document.querySelector('.btn-outline-light');
+const resetBtn = document.getElementById('reset')
+
+resetBtn.addEventListener('click', function(){
+    let nome = document.getElementById('nc').value = '';
+    let km = parseInt(document.getElementById('km').value = '');
+    let age = document.getElementById('age').value = '';
+})
 
 generateBtn.addEventListener('click', function () {
     let nome = document.getElementById('nc').value;
