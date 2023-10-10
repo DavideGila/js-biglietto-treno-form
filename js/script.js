@@ -7,9 +7,15 @@
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65.
 
-let name = document.getElementById('nc');
-let km = document.getElementById('km');
-let age = document.getElementById('age');
 
-let generateBtn = document.getElementById('genbutton');
+const generateBtn = document.querySelector('.btn-outline-light');
+
+generateBtn.addEventListener('click', function(){
+    let nome = document.getElementById('nc').value;
+    console.log(nome)
+    let km = document.getElementById('km').value;
+    console.log(km)
+    let age = document.getElementById('age').value;
+    console.log(age)    
+})
 
